@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 500;
+}
+
+nav {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    width: 100dvw;
+}
+nav .logo {
+    display: flex;
+    align-items: center;
+}
+nav .logo img {
+    width: 35px;
+    margin: 0 5px 0 20px;
+}
+nav .logo h2 {
+    color: white;
+}
+nav .links{
+    margin-left: 50px;
+}
+nav .links a{
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    padding: 30px 25px;
+    transition: all 0.3s;
+}
+nav .links a:hover{
+    background-color: rgb(54, 54, 54);
+}
+.container {
+    width: 100%;
+    height: 70vh;
+    /* background-color: blue; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.screen {
+    width: 80%;
+    height: 70vh;
+    /* background-color: rgb(20, 20, 20); */
+    background-image: url('assets/wallpaperflare.com_wallpaper.jpg');
+    background-size:cover;
+    background-repeat: no-repeat;
+    color: white;
+    margin-top: 50px;
+    padding-bottom: 30px;
+    border-radius: 15px;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+.screen::-webkit-scrollbar {
+    display: none;
+}
+.screen h1 {
+    padding: 20px 20px 20px 35px;
+    font-size: 25px;
+}
+.songItem {
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    background-color: rgba(192, 192, 192, 0.300);
+    width: 36%;
+    padding: 5px 10px 3px 10px;
+    margin: 10px 0 0 25px;
+    color: black;
+    border-radius: 50px;
+
+    .titlesec .title {
+        font-size: 17px;
+        color: rgb(216, 216, 216);
+        cursor:default;
+    }
+    .timestampsec .timestamp {
+        cursor: default;
+    }
+    i {
+        cursor: pointer;
+        font-size: 20px;
+        margin-left: 6px;
+    }
+}
+
+.songItem .titlesec {
+    width: 60%;
+}
+.songItem .titlesec{   /*To hide extra text of title inside that div*/
+    overflow: hidden;
+}
+.songItem .imgsec img{
+    width: 50px;
+    border-radius: 50px;
+}
+
+/* Bottom Section */
+
+.bottom {
+    /* position: sticky; */
+    position: relative;
+    top: 40px;
+    width: 100dvw;
+    height: 100px;
+    overflow-x: hidden;
+    background-color: black;
+}
+body::-webkit-scrollbar{    /*It will hide x-axis scroll bar for entire html body*/
+    display: none;
+}
+.bottom .seeker {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    input[type="range"] {
+        width: 80%;
+        margin-top: 20px;
+        /* -webkit-appearance: none;
+        appearance: none; */
+        background-color: rgb(160, 160, 160);
+        height: 2px;
+        
+        cursor: pointer;
+    }
+}
+.bottom .btns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(231, 231, 231);
+    margin-top: 10px;
+    i{
+      padding: 10px;
+      cursor: pointer;
+    }
+    .fa-regular {
+        font-size: 45px;
+    }
+    .fa-solid {
+        font-size: 27px;
+    }
+}
+.bottom .songInfo {
+    position: absolute;
+    top: 45px;
+    left: 140px;
+    /* background-color: rgba(75, 75, 75, 0.432); */
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content:left;
+}
+.bottom .songInfo img {
+    width: 60px;
+    margin-right: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in;
+}
+.bottom .songInfo span {
+    color: white;
+}
