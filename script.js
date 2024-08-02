@@ -30,7 +30,7 @@ masterPlay.addEventListener('click', ()=> {
           masterPlay.classList.remove('fa-circle-pause');
           gif.style.opacity = 0;
     }
-})
+});
 
 //Listen to Events
 audioElement.addEventListener('timeupdate', (element)=> {
@@ -47,4 +47,9 @@ audioElement.addEventListener('timeupdate', (element)=> {
         masterPlay.classList.remove('fa-circle-pause');
     }
     
-})
+});
+
+//adding eventListener to seek bar. When we seek progress bar, song will change to that part
+myProgressBar.addEventListener('change',() => {
+    audioElement.currentTime = (myProgressBar.value * audioElement.duration/100);
+});
