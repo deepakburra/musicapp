@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Spotify Clone</title>
+    <title>Deepak's Music app</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
@@ -13,7 +13,7 @@
   <nav>
     <div class="logo">
         <img src="assets/spotifylogo.png" alt="Spotify">
-        <h2>Spotify</h2>
+        <h2>Dpak</h2>
     </div>
     <div class="links">
         <a href="#home">Home</a>
@@ -33,7 +33,7 @@
               <span class="title"></span>
             </div>
             <div class="timestampsec">
-              <span class="timestamp">04:48 <i class="fa-regular fa-circle-play"></i> </span>
+              <span class="timestamp">04:48 <i id="0" class="fa-regular songItemPlay fa-circle-play"></i> </span>
             </div>
          </div>
 
@@ -45,7 +45,7 @@
               <span class="title"></span>
             </div>
             <div class="timestampsec">
-              <span class="timestamp">04:40 <i class="fa-regular fa-circle-play"></i> </span>
+              <span class="timestamp">04:40 <i id="1" class="fa-regular songItemPlay fa-circle-play"></i> </span>
             </div>
         </div>
         
@@ -57,7 +57,7 @@
               <span class="title"></span>
             </div>
             <div class="timestampsec">
-              <span class="timestamp">04:01 <i class="fa-regular fa-circle-play"></i> </span>
+              <span class="timestamp">04:01 <i id="2" class="fa-regular songItemPlay fa-circle-play"></i> </span>
             </div>
         </div>
 
@@ -69,7 +69,7 @@
               <span class="title"></span>
             </div>
             <div class="timestampsec">
-              <span class="timestamp">04:04 <i class="fa-regular fa-circle-play"></i> </span>
+              <span class="timestamp">04:04 <i id="3" class="fa-regular songItemPlay fa-circle-play"></i> </span>
             </div>
         </div>
 
@@ -81,7 +81,7 @@
               <span class="title"></span>
             </div>
             <div class="timestampsec">
-              <span class="timestamp">05:46 <i class="fa-regular fa-circle-play"></i> </span>
+              <span class="timestamp">05:46 <i id="4" class="fa-regular songItemPlay fa-circle-play"></i> </span>
             </div>
         </div>
 
@@ -93,7 +93,7 @@
               <span class="title"></span>
             </div>
             <div class="timestampsec">
-              <span class="timestamp">05:46 <i class="fa-regular fa-circle-play"></i> </span>
+              <span class="timestamp">05:46 <i id="5" class="fa-regular songItemPlay fa-circle-play"></i> </span>
             </div>
         </div>
 
@@ -107,13 +107,16 @@
         <input type="range" max="100" min="0" value="0" step="0.10" id="myProgressBar">
       </div>
       <div class="btns">
-        <span><i class="fa-solid fa-backward"></i></span>
+        <span><i id="previous" class="fa-solid fa-backward"></i></span>
         <span><i class="fa-regular fa-circle-play" id="masterPlay"></i></span>
-        <span><i class="fa-solid fa-forward"></i></span>
+        <span><i id="next" class="fa-solid fa-forward"></i></span>
       </div>
       <div class="songInfo">
         <img src="assets/playing.gif" alt="" id="gif">
         <span class="bottom-title">A Thousand Years</span>
+      </div>
+      <div class="songBottomImg">
+        <img class="bottom-img" src="assets/thousandyearscoverpic.jpg" alt="">
       </div>
   </div>
 
