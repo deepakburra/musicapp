@@ -94,6 +94,7 @@ Array.from(document.getElementsByClassName('songItemPlay')).forEach((element)=> 
         masterPlay.classList.add('fa-circle-pause');
         gif.style.opacity = 1;
         bottomTitle[0].innerText = songs[songIndex].songName;
+        songBottomImg[0].src = songs[songIndex].coverPath;
         
     })
 })
